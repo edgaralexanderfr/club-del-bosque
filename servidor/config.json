@@ -1,0 +1,15 @@
+{
+  "RUTA_SOCKET_IO" : "C:\\Program Files\\nodejs\\node_modules\\socket.io", 
+  "RUTA_AUDIOS" : "../audios/", 
+  "ELIMINAR_AUDIOS_AL_INICIAR" : true, 
+  "PUERTO" : 55555, 
+  "MIN_LONG_ALIAS" : 1, 
+  "MAX_LONG_ALIAS" : 20, 
+  "MIN_LONG_MENSAJE" : 1, 
+  "MAX_LONG_MENSAJE" : 200, 
+  "ALIAS_POR_DEFECTO" : "Nuevo", 
+  "COLOR_POR_DEFECTO" : "#ec8500", 
+  "NUM_MIN_ALIAS_REPETIDO" : 1000, 
+  "NUM_MAX_ALIAS_REPETIDO" : 8999, 
+  "REGISTRO_MAX_MENSAJES" : 20
+}

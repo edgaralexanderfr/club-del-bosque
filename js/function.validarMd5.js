@@ -1,0 +1,1 @@
+/** * Copyright 2014 - Edgar Alexander Franco * * @author Edgar Alexander Franco * @version 1.7.1 *//** * Comprueba si la cadena es una hash de md5 válido. * * @param {string} md5 Cadena a validar. * @return {boolean} */function validarMd5 (md5) {  return /^[0-9a-fA-F]{32}$/g.test(md5);}

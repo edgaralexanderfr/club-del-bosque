@@ -1,0 +1,119 @@
+<!--
+ - Copyright 2014 - Edgar Alexander Franco
+ -
+ - @author Edgar Alexander Franco
+ - @version 1.7.1
+-->
+<!doctype html>
+  <html>
+    <head>
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script type="text/javascript" src="//www.WebRTC-Experiment.com/RecordRTC.js"></script>
+      <script type="text/javascript" src="js/function.validarColor.js"></script>
+      <script type="text/javascript" src="js/function.validarMd5.js"></script>
+      <script type="text/javascript" src="js/function.validarURLYouTube.js"></script>
+      <script type="text/javascript" src="js/class.ChatException.js"></script>
+      <script type="text/javascript" src="js/class.Cookie.js"></script>
+      <script type="text/javascript" src="js/class.Sonido.js"></script>
+      <script type="text/javascript" src="js/class.Microfono.js"></script>
+      <script type="text/javascript" src="js/class.Chat.js"></script>
+      <script type="text/javascript" src="js/index.js"></script>
+      <link rel="shortcut icon" href="img/icono.ico" />
+      <link type="text/css" rel="stylesheet" href="css/index.css" />
+      <title>El club del bosque</title>
+    </head>
+    <body>
+      <div class="contenedorPrincipal">
+        <div class="fondoVentana" id="ventanaVideo">
+          <div class="botones">
+            <button class="boton" id="botonOcultarVideo" title="Ocultar vídeo">Ocultar</button>
+          </div>
+          <span id="videoYouTube"></span>
+        </div>
+        <div class="fondoVentana" id="ventanaVideos">
+          <div class="ventana">
+            <div class="subtitulo">
+              Vídeos.
+            </div>
+            <div class="linea">
+              <div class="izq">
+                <input class="inputURLYouTube" id="inputVideo" type="text" placeholder="URL del vídeo de YouTube." />
+              </div>
+              <div class="der">
+                <button class="boton" id="botonCompartirVideo" title="Compartir vídeo">Compartir</button>
+              </div>
+            </div>
+            <div class="linea">
+              <button class="boton" id="botonMostrarVideo" title="Mostrar vídeo actual">Mostrar</button>
+              <button class="boton" id="botonReanudarVideo" title="Reanudar vídeo actual">Reanudar</button>
+              <button class="boton" id="botonCerrarVentanaVideos" title="Cerrar ventana">Cerrar</button>
+            </div>
+          </div>
+        </div>
+        <div class="fondoVentana" id="ventanaAudios">
+          <div class="ventana">
+            <div class="subtitulo">
+              Relatos.
+            </div>
+            <div class="relatos"></div>
+            <div class="subtitulo">
+              Audios.
+            </div>
+            <div class="linea">
+              <div class="izq">
+                <input class="inputURLYouTube" id="inputAudio" type="text" placeholder="URL del vídeo de YouTube." />
+              </div>
+              <div class="der">
+                <button class="boton" id="botonCompartirAudio" title="Compartir audio personalizado">Compartir</button>
+              </div>
+            </div>
+            <div class="linea">
+              <button class="boton" id="botonPararAudio" title="Parar relato/audio actual">Parar</button>
+              <button class="boton" id="botonReanudarAudio" title="Reanudar relato/audio actual">Reanudar</button>
+              <button class="boton" id="botonCerrarVentanaAudios" title="Cerrar ventana">Cerrar</button>
+            </div>
+          </div>
+        </div>
+        <div class="fondoVentana" id="ventanaMiembros">
+          <div class="ventana">
+            <div class="subtitulo">
+              Miembros conectados (aparte de ti).
+            </div>
+            <div class="miembros"></div>
+            <div class="linea">
+              <button class="boton" id="botonCerrarVentanaMiembros" title="Cerrar ventana">Cerrar</button>
+            </div>
+          </div>
+        </div>
+        <header>
+          <div class="cabecera">
+            <div class="logo">
+              <img src="img/logo.jpg" alt />
+            </div>
+            <div class="panel">
+              <button class="boton" id="botonAbrirVentanaVideos">Vídeos</button>
+              <button class="boton" id="botonAbrirVentanaAudios">Relatos/Audios</button>
+              <button class="boton" id="botonAbrirVentanaMiembros">Miembros</button>
+              <button class="boton" id="botonBeep">Desactivar Beep</button>
+              <button class="boton" id="botonBGS" title="(Sonido de fondo)">Desactivar BGS</button>
+            </div>
+          </div>
+        </header>
+        <article>
+          <div class="chat"></div>
+          <div class="cajaMensaje">
+            <input class="inputAlias" type="text" placeholder="Tu alias." />
+            <input class="inputColor" type="color" placeholder="#00FF00" />
+            <select class="selectDestinatarios">
+              <option value="u0" title="Enviar a todos">Todos</option>
+            </select>
+            <input class="botonGrabar" id="botonGrabar" type="button" title="Grabar un audio de 5 segundos." />
+            <input class="inputMensaje" type="text" placeholder="Escribe algo..." />
+            <button class="boton botonEnviarMensaje" id="botonEnviarMensaje">Enviar</button>
+          </div>
+        </article>
+      </div>
+      <span id="bgs"></span>
+      <span id="audioYouTube"></span>
+    </body>
+  </html>

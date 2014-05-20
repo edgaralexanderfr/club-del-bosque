@@ -1,0 +1,20 @@
+/**
+ * Copyright 2014 - Edgar Alexander Franco
+ *
+ * @author Edgar Alexander Franco
+ * @version 1.7.1
+ */
+
+html, body {
+  width : 99%;
+  height : 98%;
+  
+  background-color : black;
+  background-image : url(../img/club-cerrado.jpg);
+  background-repeat : no-repeat;
+  background-position : center center;
+  
+  font-family : Arial;
+  font-size : 16px;
+  color : #ff7800;
+}

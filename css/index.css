@@ -1,0 +1,445 @@
+/**
+ * Copyright 2014 - Edgar Alexander Franco
+ *
+ * @author Edgar Alexander Franco
+ * @version 1.7.1
+ */
+
+body {
+  background-color : black;
+  
+  text-align : center;
+}
+
+.fondoVentana {
+  position : absolute;
+  
+  width : 1000px;
+  height : 483px;
+  
+  background-image : url(../img/fondo-ventana.png);
+  
+  display : none;
+}
+
+.fondoVentana .botones {
+  padding : 10px;
+  padding-top : 0px;
+  
+  width : 98%;
+  
+  text-align : right;
+  
+  display : inline-block;
+}
+
+.fondoVentana .ventana {
+  margin-top : 50px;
+  padding-bottom : 10px;
+  
+  width : 420px;
+  
+  border : 2px solid;
+  border-color : #8b623e;
+  border-radius : 15px 15px 15px 15px;
+  background-color : #d89b66;
+  
+  display : inline-block;
+}
+
+.fondoVentana .ventana .subtitulo {
+  padding-top : 10px;
+  padding-bottom : 10px;
+  
+  width : 90%;
+  
+  font-family : Arial;
+  font-style : italic;
+  font-weight : bold;
+  font-size : small;
+  text-align : left;
+  
+  display : inline-block;
+}
+
+.fondoVentana .ventana .relatos {
+  width : 100%;
+  height : 175px;
+  
+  font-family : Arial;
+  font-style : italic;
+  font-weight : bold;
+  font-size : small;
+  color : black;
+  
+  display : inline-block;
+  overflow-x : hidden;
+  overflow-y : scroll;
+}
+
+.fondoVentana .ventana .relatos .relato {
+  padding-top : 10px;
+  padding-bottom : 10px;
+  padding-left : 10px;
+  
+  width : 95%;
+  
+  border : 2px solid;
+  border-color : #4d857f;
+  background-color : #a5c4c1;
+  
+  font-family : Arial;
+  font-style : italic;
+  font-weight : bold;
+  font-size : small;
+  color : black;
+  text-decoration : none;
+  text-align : left;
+  word-wrap : break-word;
+  
+  display : inline-block;
+}
+
+.fondoVentana .ventana .relatos .relato:visited {
+  border-color : #4d857f;
+  background-color : #a5c4c1;
+}
+
+.fondoVentana .ventana .relatos .relato:hover {
+  border-color : #6abd62;
+  background-color : #8def82;
+  text-decoration : underline;
+}
+
+.fondoVentana .ventana .relatos .relato:active {
+  border-color : #9b2533;
+  background-color : #ff6a7c;
+  text-decoration : underline;
+}
+
+.fondoVentana .ventana .miembros {
+  width : 100%;
+  height : 175px;
+  
+  display : inline-block;
+  overflow-x : hidden;
+  overflow-y : scroll;
+}
+
+.fondoVentana .ventana .miembro {
+  padding-top : 10px;
+  padding-bottom : 10px;
+  
+  width : 100%;
+  
+  display : inline-block;
+}
+
+.fondoVentana .ventana .miembro .username {
+  padding-top : 8px;
+  padding-left : 20px;
+  
+  width : 35%;
+  height : 19px;
+  
+  font-family : Arial;
+  font-style : italic;
+  font-weight : bold;
+  font-size : small;
+  color : #ec8500;
+  text-align : left;
+  word-wrap : break-word;
+  
+  float : left;
+  overflow : hidden;
+}
+
+.fondoVentana .ventana .miembro .fechaConexion {
+  padding-top : 8px;
+  
+  width : 40%;
+  
+  font-family : Arial;
+  font-weight : bold;
+  font-size : small;
+  color : black;
+  text-align : center;
+  
+  float : left;
+}
+
+.fondoVentana .ventana .miembro .ignorar {
+  width : 20%;
+  
+  text-align : center;
+  
+  float : left;
+}
+
+.fondoVentana .ventana .linea {
+  padding-top : 5px;
+  padding-top : 5px;
+  
+  width : 90%;
+  
+  text-align : center;
+  
+  display : inline-block;
+}
+
+.fondoVentana .ventana .linea .izq {
+  width : 50%;
+  
+  float : left;
+}
+
+.fondoVentana .ventana .linea .der {
+  width : 50%;
+  
+  float : right;
+}
+
+.fondoVentana .ventana .inputURLYouTube {
+  padding : 5px;
+  
+  width : 100%;
+  height : 30px;
+  
+  border : 1px solid;
+  border-color : black;
+  border-radius : 10px 10px 10px 10px;
+  
+  font-family : Arial;
+  font-style : italic;
+  font-weight : bold;
+  font-size : small;
+  color : black;
+}
+
+#ventanaVideo {
+  z-index : 2;
+}
+
+#ventanaVideo #videoYouTube iframe {
+  display : inline-block;
+}
+
+#ventanaVideos {
+  z-index : 1;
+}
+
+#ventanaAudios {
+  z-index : 0;
+}
+
+.contenedorPrincipal {
+  width : 1000px;
+  
+  text-align : center;
+  
+  display : inline-block;
+}
+
+.cabecera {
+  width : 980px;
+  
+  text-align : left;
+  
+  display : inline-block;
+}
+
+.logo {
+  width : 40%;
+  
+  float : left;
+}
+
+.panel {
+  width : 60%;
+  
+  text-align : right;
+  
+  float : right;
+}
+
+.chat {
+  width : 955px;
+  height : 340px;
+  
+  background-image : url(../img/niebla.png), url(../img/luna.jpg), url(../img/fogata.gif);
+  background-repeat : no-repeat, no-repeat, no-repeat;
+  background-position : 955px top, right top, center center;
+  
+  overflow : auto;
+  display : inline-block;
+}
+
+.mensaje {
+  margin-top : 5px;
+  margin-bottom : 5px;
+  
+  width : 100%;
+  
+  text-align : left;
+}
+
+.log, .logMensaje, .logSusurro {
+  padding : 10px;
+  
+  max-width : 850px;
+  
+  border : 2px solid;
+  border-color : #444444;
+  border-radius : 10px 10px 10px 10px;
+  background-color : white;
+  
+  font-family : Arial;
+  font-style : italic;
+  font-weight : bold;
+  font-size : 14px;
+  color : black;
+  word-wrap : break-word;
+  
+  display : inline-block;
+}
+
+.log {
+  border-color : #4d857f;
+  background-color : #a5c4c1;
+}
+
+.logMensajeRemitente {
+  margin-right : 10px;
+  
+  font-weight : bold;
+  color : #ec8500;
+}
+
+.logSusurro {
+  border-color : #6abd62;
+  background-color : #8def82;
+}
+
+.linkAudio {
+  font-family : Arial;
+  font-size : 14px;
+  color : #498a9d;
+}
+
+.linkAudio:visited {
+  color : #498a9d;
+}
+
+.linkAudio:hover {
+  color : #77c176;
+}
+
+.linkAudio:active {
+  color : #ca8f43;
+}
+
+.cajaMensaje {
+  margin-top : 10px;
+  
+  width : 1000px;
+  
+  display : inline-block;
+}
+
+.cajaMensaje input, .cajaMensaje select {
+  padding : 10px;
+  
+  border : 1px solid;
+  border-color : #71cc68;
+  border-radius : 10px 10px 10px 10px;
+  
+  font-family : Arial;
+  font-weight : bold;
+  font-size : 16px;
+  color : black;
+}
+
+.inputAlias {
+  width : 75px;
+}
+
+.inputColor {
+  margin-left : 5px;
+  
+  width : 75px;
+}
+
+.selectDestinatarios {
+  margin-left : 5px;
+  
+  width : 100px;
+}
+
+.botonGrabar, .botonGrabarGrabando, .botonGrabarGuardando {
+  margin-left : 5px;
+  
+  width : 44px;
+  height : 37px;
+  
+  background-image : url(../img/boton-grabar.jpg);
+  background-repeat : no-repeat;
+  
+  display : inline-block;
+}
+
+.botonGrabar:hover {
+  background-position : 0px -37px;
+}
+
+.botonGrabarGrabando {
+  background-position : 0px -74px;
+}
+
+.botonGrabarGuardando {
+  background-position : 0px -111px;
+}
+
+.inputMensaje {
+  margin-left : 5px;
+  
+  width : 470px;
+}
+
+.boton {
+  margin-left : 5px;
+  margin-right : 5px;
+  
+  padding : 5px;
+  
+  border : 1px solid;
+  border-color : #d18002;
+  border-radius : 5px 5px 5px 5px;
+  background-color : #f0b75c;
+  
+  font-family : Arial;
+  font-size : small;
+  color : white;
+}
+
+.boton:hover {
+  border-color : #c14646;
+  background-color : #fb4e4e;
+}
+
+.boton:active {
+  border-color : #19a802;
+  background-color : #58c146;
+}
+
+.botonEnviarMensaje {
+  margin-right : 0px;
+  
+  width : 75px;
+  height : 41px;
+  
+  font-size : 16px;
+}
+
+iframe {
+  display : block;
+}

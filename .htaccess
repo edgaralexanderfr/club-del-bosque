@@ -1,0 +1,9 @@
+#ExpiresActive On
+#ExpiresDefault A1
+#Header append Cache-Control "no-cache, no-store, must-revalidate, max-age=0, proxy-revalidate, no-transform"
+#Header append Pragma "no-cache"
+#Header append Expires "Wed, 11 Jan 1984 05:00:00 GMT"
+
+# Do not remove this line or mod_rewrite rules and search engine friendly URLs will stop working
+RewriteBase /
+
