@@ -15,8 +15,8 @@ Requerimientos
 
 Para instalar dicho chat, se requiere un servidor que tenga instalado los siguientes softwares:
 
--Node.js - http://nodejs.org/ .
--Socket.IO - http://socket.io/ .
--Apache server (o cualquier servidor web con PHP preferiblemente) - https://www.apachefriends.org/ .
--FFMPEG (programa ejecutable, hay una copia para Windows disponible en el directorio "servidor") - http://www.ffmpeg.org/ .
+1. Node.js - http://nodejs.org/
+2. Socket.IO - http://socket.io/
+3. Apache server (o cualquier servidor web con PHP preferiblemente) - https://www.apachefriends.org/
+4. FFMPEG (programa ejecutable, hay una copia para Windows disponible en el directorio "servidor") - http://www.ffmpeg.org/
 
