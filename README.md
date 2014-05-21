@@ -96,7 +96,21 @@ Luego nos regresamos a nuestro directorio del servidor web (club-del-bosque) y a
   );
 ```
 
-En los headers debemos especificar los dominios que podrán utilizar el script, en nuestro caso podemos dejar 'http://localhost' (sin comillas) si queremos que solo sea accesible por el servidor local.
+NOTA: para utilizar éste script que emplea la función 'mime_content_type', tu servidor web debe tener instalada la extensión PECL y además deberás tener dicha extensión incluída en el entorno de PHP, para confirmar eso puedes abrir tu archivo php.ini y buscar la siguiente línea:
+
+```
+extension=php_fileinfo.dll
+```
+
+En caso de que la encuentres comentada de la siguiente manera:
+
+```
+;extension=php_fileinfo.dll
+```
+
+Deberás retirar el punto y coma que antepone la instrucción para des-comentarla y luego deberás reiniciar tu servidor web para que los cambios surtan efecto.
+
+En los headers del script debemos especificar los dominios que podrán utilizar el mismo, en nuestro caso podemos dejar 'http://localhost' (sin comillas) si queremos que solo sea accesible por el servidor local.
 
 Luego en las constantes definidas tenemos:
 
