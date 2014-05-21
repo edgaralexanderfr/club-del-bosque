@@ -173,4 +173,6 @@ Notas
 
 1. Los archivos html, php, y css figuran para la interfaz de usuario que implementa las clases del código cliente (principalmente index.html), yo brindo la intefaz de mi sitio, solo te pido que por favor no la clones, trata de crear la tuya propia basándote en dichos archivos y tus necesidades.
 
-2. Debo admitir que configurar el chat puede ser algo tedioso y me disculpo por ello, sin embargo trato de ser lo más explícito en la documentación para que así la instalación pueda lograrse exitosamente, si tienes alguna duda no dudes en contactarme :)
+2. La principal razón por la cual comparto éste pequeño proyecto personal es con la finalidad de poder mostrarlo como un anéxo a la hora de solicitar un puesto laboral, y así demostrar mi experiencia; por supuesto, también está libremente abierto para cualquier persona que quiera revisar mi proyecto.
+
+3. Debo admitir que configurar el chat puede ser algo tedioso y me disculpo por ello, sin embargo trato de ser lo más explícito en la documentación para que así la instalación pueda lograrse exitosamente, si tienes alguna duda no dudes en contactarme :)
