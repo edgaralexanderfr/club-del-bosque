@@ -129,7 +129,7 @@ var Chat = (function () {
   self.MENSAJE_CLIENTE = 2;
 ```
 
-En dónde SERVIDOR es el dominio y puerto que debemos especificar para nuestro chat, nótese que el resto de la configuración es similar a la del servidor, se recomienda tener a ambos iguales.
+En dónde SERVIDOR es el dominio y puerto que debemos especificar para nuestro chat (en nuestro caso lo dejamos así), nótese que el resto de la configuración es similar a la del servidor, se recomienda tener a ambos iguales.
 
 Lo último que debemos hacer es configurar el chat de voz, para ello abrímos el archivo js/class.Microfono.js (en la misma carpeta), y tenemos:
 
