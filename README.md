@@ -154,8 +154,8 @@ var Microfono = (function () {
 
 En dónde:
 
-1.) URL_AUDIOS: Determina la ruta de los archivos de audio del voice chat, puede ser un path absoluto (http://localhost/club-del-bosque/audios/) o un path relativo como se muestra en el ejemplo.
-2.) SCRIPT_DESTINO: Determina la ruta hacia el script que deberá guardar el archivo de audio en la carpeta de "audios", en nuestro caso es guardar-audio.php.
+1. URL_AUDIOS: Determina la ruta de los archivos de audio del voice chat, puede ser un path absoluto (http://localhost/club-del-bosque/audios/) o un path relativo como se muestra en el ejemplo.
+2. SCRIPT_DESTINO: Determina la ruta hacia el script que deberá guardar el archivo de audio en la carpeta de "audios", en nuestro caso es guardar-audio.php.
 
 Corriendo el chat
 -----------------
@@ -171,4 +171,6 @@ node main.js
 Notas
 -----
 
-Debo admitir que configurar el chat puede ser algo tedioso y me disculpo por ello, sin embargo trato de ser lo más explícito en la documentación para que así la instalación pueda lograrse exitosamente, si tienes alguna duda no dudes en contactarme :)
+1. Los archivos html, php, y css figuran para la interfaz de usuario que implementa las clases del código cliente (principalmente index.html), yo brindo la intefaz de mi sitio, solo te pido que por favor no la clones, trata de crear la tuya propia basándote en dichos archivos y tus necesidades.
+
+2. Debo admitir que configurar el chat puede ser algo tedioso y me disculpo por ello, sin embargo trato de ser lo más explícito en la documentación para que así la instalación pueda lograrse exitosamente, si tienes alguna duda no dudes en contactarme :)
